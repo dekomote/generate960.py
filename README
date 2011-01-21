@@ -1,0 +1,31 @@
+== Generate960.py ==
+
+**generate960.py** - CLI script for generating custom 960gs grids (css) Can generate grids will custom width/column number/gutter width. Outputs to file or stdout.
+
+== Usage ==
+
+**//python generate960.py//**
+
+==== Optional Arguments ====
+
+  -h, --help            show help message and exit
+
+  -w WIDTH, --width WIDTH
+                        Content width in px. Defaults to 960px.
+
+  -c COLUMNS, --columns COLUMNS
+                        Number of columns. Defaults to 12.
+
+  -g GUTTER, --gutter GUTTER
+                        Gutter width in px. Defaults to 20px.
+
+  -f FILE, --file FILE  Name of the file to be saved. If this is not specified
+                        the css will be printed to stdout
+
+To generate 1024 grid with 15px gutters and 10 columns:
+
+**//python generate960.py -w 1024 -c 10 -g 15//**
+
+== Requirements ==
+# jinja2
+# argparse
